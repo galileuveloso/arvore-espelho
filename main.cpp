@@ -11,6 +11,10 @@ Arvore* cria_arv_vazia (void) {
    return NULL;
 }
 
+int verifica_arv_vazia (Arvore* a) {
+  return (a == NULL);
+}
+
 Arvore* arv_constroi (char c, Arvore* e, Arvore* d) {
   Arvore* a = (Arvore*)malloc(sizeof(Arvore));
   a->info = c;
@@ -79,7 +83,7 @@ int main(int argc, char** argv) {
 	if(eh_espelho(a, a1) == 0)
 		printf("eh espelho\n");
 	else 
-		printf("nao eh espelho\n");*/
+		printf("nao eh espelho\n");
 		
 	//chamo a de criar um espelho
 	//comparo se as duas sao espelhadas
